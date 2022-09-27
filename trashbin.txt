@@ -1,0 +1,3117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Form</title>
+<!-- <style>
+  #nameel[type="text"]:hover{
+    border: 1px green solid;
+    
+  }
+</style> -->
+
+</head>
+
+<body>
+  <div class="container">
+    <h1 style="font-style: oblique; color: orange; font-weight: 800; "class=" text-center mt-5">Form</h1>
+
+
+    <form id="formel">
+      <div class="mb-3">
+        <label class="form-label mt-5">Name:-</label>
+        <input type="text" class="form-control" placeholder="UserName" id="nameel" autocomplete="off" onkeyup="this.value=this.value.replace(/[^A-z]/g,'');" >
+      </div>
+      <div class="mb-3">
+        <label class="form-label mt-5">Email:-</label>
+        <input type="email" class="form-control" placeholder="Email" id="emailel" autocomplete="off">
+      </div>
+      <div class="mb-3">
+        <label class="form-label mt-5">mobile:-</label>
+        <input type="tel" class="form-control" placeholder="Mobile Number" id="mobileel" maxLength="10"
+          pattern="^[9][0-9]{9}$" autocomplete="off" pattern="[a-zA-Z]+"   onkeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+      </div>
+      <div class="mb-3">
+        <label class="form-label mt-5">Password:-</label>
+        <input type="password" class="form-control" placeholder="Password" id="Passwordel" autocomplete="off" >
+      </div>
+
+      <div class="my-3">
+        <input type="file" class=" bg-dark text-light">
+      </div>
+
+      <input type="submit" class="btn btn-primary" id="new-task-submit" value="Submit">
+    </form>
+    <div class="task-list">
+      <h1 class="my-5 text-center" style="font-style: oblique; color: red; font-weight: 800;" >Details</h1>
+
+      <div class="tasks">
+        <!-- <div class="task">
+                    <div class="content ">
+                        <input type="text " value="my item" readonly class="text mb-2 form-control">
+                    </div>
+                    <div class="actions ">
+                        <button class="edit btn btn-warning">Edit</button>
+                        <button class="delete btn btn-danger">Delete</button>
+                    
+                    </div>
+                </div> -->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+ 
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Form</title>
+<!-- <style>
+  #nameel[type="text"]:hover{
+    border: 1px green solid;
+    
+  }
+</style> -->
+
+</head>
+
+<body>
+  <div class="container">
+    <h1 style="font-style: oblique; color: orange; font-weight: 800; "class=" text-center mt-5">Form</h1>
+
+
+    <form id="formel">
+      <div class="mb-3">
+        <label class="form-label mt-5">Name:-</label>
+        <input type="text" class="form-control" placeholder="UserName" id="nameel" autocomplete="off" onkeyup="this.value=this.value.replace(/[^A-z]/g,'');" >
+      </div>
+      <div class="mb-3">
+        <label class="form-label mt-5">Email:-</label>
+        <input type="email" class="form-control" placeholder="Email" id="emailel" autocomplete="off">
+      </div>
+      <div class="mb-3">
+        <label class="form-label mt-5">mobile:-</label>
+        <input type="tel" class="form-control" placeholder="Mobile Number" id="mobileel" maxLength="10"
+          pattern="^[9][0-9]{9}$" autocomplete="off" pattern="[a-zA-Z]+"   onkeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+      </div>
+      <div class="mb-3">
+        <label class="form-label mt-5">Password:-</label>
+        <input type="password" class="form-control" placeholder="Password" id="Passwordel" autocomplete="off" >
+      </div>
+
+      <div class="my-3">
+        <input type="file" class=" bg-dark text-light">
+      </div>
+
+      <input type="submit" class="btn btn-primary" id="new-task-submit" value="Submit">
+    </form>
+    <div class="task-list">
+      <h1 class="my-5 text-center" style="font-style: oblique; color: red; font-weight: 800;" >Details</h1>
+
+      <div class="tasks">
+        <!-- <div class="task">
+                    <div class="content ">
+                        <input type="text " value="my item" readonly class="text mb-2 form-control">
+                    </div>
+                    <div class="actions ">
+                        <button class="edit btn btn-warning">Edit</button>
+                        <button class="delete btn btn-danger">Delete</button>
+                    
+                    </div>
+                </div> -->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+ 
+const form = document.querySelector("#formel");
+const input = document.querySelector("#nameel");
+const input1 = document.querySelector("#emailel");
+const input2 = document.querySelector("#mobileel");
+const input3 = document.querySelector("#Passwordel");
+const tasks = document.querySelector(".tasks");
+
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const userData = input.value;
+    const userData1 = input1.value;
+    const userData2 = input2.value;
+    const userData3 = input3.value;
+
+
+
+   focus().addEventListener("click", ()=>{
+    if (userData == pattern="[a-zA-Z]") {
+        // alert("Please provide the name!")
+        input.style.border="1px solid red"
+        return false;
+    }else{
+        input.style.border="1px solid green"
+    }
+   })
+
+    if (!userData1) {
+        alert("Please provide an email!")
+        return false;
+    }
+
+    if (!userData2) {
+        alert("Please provide an phone number!")
+        return false;
+    }
+
+    if (!userData3) {
+        alert("Please provide an password!")
+        return false;
+    }
+
+    const task = document.createElement("div");
+    task.classList.add("task","mb-3");
+
+    const content = document.createElement("div")
+    content.classList.add("content")
+
+    const newname = document.createElement("input")
+    newname.classList.add("text","form-control","mb-2")
+    newname.value = userData;
+    newname.setAttribute("readonly", "readonly");
+    newname.type = "text"
+
+    const email = document.createElement("input")
+    email.classList.add("text","form-control","mb-2")
+    email.value = userData1;
+    email.setAttribute("readonly", "readonly");
+    email.type = "email"
+
+
+    const mobile = document.createElement("input")
+    mobile.classList.add("text","form-control","mb-2")
+    mobile.value = userData2;
+    mobile.setAttribute("readonly", "readonly");
+    mobile.type = "tel"
+
+    const password = document.createElement("input")
+    password.classList.add("text","form-control","mb-2")
+    password.value = userData3;
+    password.setAttribute("readonly", "readonly");
+    password.type = "password"
+
+    content.appendChild(newname);
+    content.appendChild(email)
+    content.appendChild( mobile)
+    content.appendChild(password)
+    task.appendChild(content);
+    tasks.appendChild(task);
+
+    const actions = document.createElement("div");
+    actions.classList.add("actions");
+
+    const task_edit = document.createElement("button");
+    task_edit.classList.add("edit","btn","btn-secondary")
+    task_edit.innerHTML = "Edit";
+
+    const task_delete = document.createElement("button");
+    task_delete.classList.add("delete","btn", "btn-info","mx-3")
+    task_delete.innerHTML = "Delete";
+
+    actions.appendChild(task_edit)
+    actions.appendChild(task_delete)
+    task.appendChild(actions)
+
+    input.value = "";
+    input1.value = "";
+    input2.value = "";
+    input3.value = "";
+    
+    
+
+    // Edit user data 
+    task_edit.addEventListener("click", () => {
+        if (task_edit.innerHTML == "Edit") {
+            newname.removeAttribute("readonly")
+            email.removeAttribute("readonly")
+            mobile.removeAttribute("readonly")
+            password.removeAttribute("readonly")
+            
+            task_edit.innerHTML = "Save"
+            newname.focus()
+            email.focus()
+            mobile.focus()
+            password.focus()
+
+        } else {
+            newname.setAttribute("readonly", "readonly");
+            email.setAttribute("readonly", "readonly");
+            mobile.setAttribute("readonly", "readonly");
+            password.setAttribute("readonly", "readonly");
+
+
+     
+            task_edit.innerHTML = "Edit"
+
+
+            newname.remove.focus()
+            email.remove.focus()
+            mobile.remove.focus()
+            password.remove.focus()
+
+        }
+
+      
+    })
+
+// Delete user data 
+task_delete.addEventListener("click",() =>{
+        tasks.removeChild(task); 
+} )
+
+})
+ 
+pattern="[a-zA-Z]"
+ 
+onkeyup="this.value=this.value.replace(/[^A-z]/g,'');"
+ 
+ if (!userData) {
+        // alert("Please provide the name!")
+        input.style.border="1px solid red"
+        return false;
+    }else{
+        input.style.border="1px solid green"
+    }
+ 
+// const form = document.querySelector("#new-task-form");
+// const input = document.querySelector("#nameel");
+// const input1 = document.querySelector("#emailel");
+// const input2 = document.querySelector("#mobileel");
+// const input3 = document.querySelector("#Passwordel");
+// const tasks = document.querySelector(".tasks");
+
+
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     const userData = input.value;
+//     const userData1 = input1.value;
+//     const userData2 = input2.value;
+//     const userData3 = input3.value;
+
+
+
+//     if (!userData) {
+//         alert("Please provide the name!")
+//         return false;
+//     }
+
+//     if (!userData1) {
+//         alert("Please provide an email!")
+//         return false;
+//     }
+
+//     if (!userData2) {
+//         alert("Please provide an phone number!")
+//         return false;
+//     }
+
+//     if (!userData3) {
+//         alert("Please provide an password!")
+//         return false;
+//     }
+
+//     const task = document.createElement("div");
+//     task.classList.add("task","mb-3");
+
+//     const content = document.createElement("div")
+//     content.classList.add("content")
+
+//     const task_input = document.createElement("input")
+//     task_input.classList.add("text","form-control","mb-2")
+//     task_input.value = userData;
+//     task_input.setAttribute("readonly", "readonly");
+//     task_input.type = "text"
+
+//     const email = document.createElement("input")
+//     email.classList.add("text","form-control","mb-2")
+//     email.value = userData1;
+//     email.setAttribute("readonly", "readonly");
+//     email.type = "email"
+
+
+//     const mobile = document.createElement("input")
+//     mobile.classList.add("text","form-control","mb-2")
+//     mobile.value = userData2;
+//     mobile.setAttribute("readonly", "readonly");
+//     mobile.type = "tel"
+
+//     const password = document.createElement("input")
+//     password.classList.add("text","form-control","mb-2")
+//     password.value = userData3;
+//     password.setAttribute("readonly", "readonly");
+//     password.type = "password"
+
+//     content.appendChild(task_input);
+//     content.appendChild(email)
+//     content.appendChild( mobile)
+//     content.appendChild(password)
+//     task.appendChild(content);
+//     tasks.appendChild(task);
+
+//     const actions = document.createElement("div");
+//     actions.classList.add("actions");
+
+//     const task_edit = document.createElement("button");
+//     task_edit.classList.add("edit","btn","btn-warning")
+//     task_edit.innerHTML = "Edit";
+
+//     const task_delete = document.createElement("button");
+//     task_delete.classList.add("delete","btn", "btn-danger","mx-3")
+//     task_delete.innerHTML = "Delete";
+
+//     actions.appendChild(task_edit)
+//     actions.appendChild(task_delete)
+//     task.appendChild(actions)
+
+//     input.value = ""
+// input1.value = "";
+// input2.value = "";
+// input3.value = "";
+
+//     // Edit user data 
+//     task_edit.addEventListener("click", () => {
+//         if (task_edit.innerHTML == "Edit") {
+//             task_input.removeAttribute("readonly")
+//             email.removeAttribute("readonly")
+//             mobile.removeAttribute("readonly")
+//             password.removeAttribute("readonly")
+            
+//             task_edit.innerHTML = "Save"
+//             task_input.focus()
+//             email.focus()
+//             mobile.focus()
+//             password.focus()
+
+//         } else {
+//             task_input.setAttribute("readonly", "readonly");
+//             email.setAttribute("readonly", "readonly");
+//             mobile.setAttribute("readonly", "readonly");
+//             password.setAttribute("readonly", "readonly");
+
+
+     
+//             task_edit.innerHTML = "Edit"
+
+
+//             task_input.remove.focus()
+//             email.remove.focus()
+//             mobile.remove.focus()
+//             password.remove.focus()
+
+//         }
+
+      
+//     })
+
+// // Delete user data 
+// task_delete.addEventListener("click",() =>{
+//         tasks.removeChild(task); 
+// } )
+
+// })
+    
+ 
+<style>
+  #nameel[type="text"]:hover{
+    border: 1px green solid;
+    
+  }
+</style>
+ 
+onkeyup="this.value=this.value.replace(/[^A-z]/g,'');"
+ 
+onkeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+ 
+onkeyup="this.value=this.value.replace(/[^A-z]/g,'');"
+ 
+onkeyup="this.value=this.value.replace(/[^A-z]/g,'');
+ 
+pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}"
+ 
+pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}"
+ 
+0-9
+ 
+ onkeyup="this.value=this.value.replace(/[^A-z]/g,'');"
+ 
+ color="#ffffff"
+ 
+ bg-primary
+ 
+new-task-form
+ 
+new-task-form
+ 
+class=
+ 
+red
+ 
+"font-size: oblique;
+ 
+<!-- <input type="tel" label="Mobile Number" pattern="^[7-9][0-9]{8}$" maxLength="10"/> -->
+<!-- <input type="tel" label="Mobile Number" pattern="^[7-9][0-9]{8}$" maxLength="10"/> -->
+ 
+"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+ 
+text
+ 
+Todo App
+ 
+Todo App
+ 
+<!-- const form = document.querySelector("#new-task-form");
+const input = document.querySelector("#new-task-input");
+const tasks = document.querySelector(".tasks");
+
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const userData = input.value;
+
+
+    if (!userData) {
+        alert("Please give some task before submitting!")
+        return;
+    }
+
+    const task = document.createElement("div");
+    task.classList.add("task");
+    task.classList.add("mb-3");
+
+    const content = document.createElement("div")
+    content.classList.add("content")
+
+    const task_input = document.createElement("input")
+    task_input.classList.add("text")
+    task_input.classList.add("form-control")
+    task_input.classList.add("mb-2")
+    task_input.value = userData;
+    task_input.setAttribute("readonly", "readonly");
+    task_input.type = "text"
+
+
+    content.appendChild(task_input);
+    task.appendChild(content);
+    tasks.appendChild(task);
+
+
+
+    const actions = document.createElement("div");
+    actions.classList.add("actions");
+
+    const task_edit = document.createElement("button");
+    task_edit.classList.add("edit")
+    task_edit.classList.add("btn")
+    task_edit.classList.add("btn-warning")
+    task_edit.innerHTML = "Edit";
+
+    const task_delete = document.createElement("button");
+    task_delete.classList.add("delete")
+    task_delete.classList.add("btn")
+    task_delete.classList.add("btn-danger")
+    task_delete.classList.add("mx-3")
+    task_delete.innerHTML = "Delete";
+
+
+    actions.appendChild(task_edit)
+    actions.appendChild(task_delete)
+    task.appendChild(actions)
+
+    input.value = ""
+
+    // Edit user data 
+    task_edit.addEventListener("click", () => {
+        if (task_edit.innerHTML == "Edit") {
+            task_input.removeAttribute("readonly")
+            task_edit.innerHTML = "Save"
+            task_input.focus()
+        } else {
+            task_input.setAttribute("readonly", "readonly");
+            task_edit.innerHTML = "Edit"
+
+        }
+    })
+
+// Delete user data 
+task_delete.addEventListener("click",() =>{
+        tasks.removeChild(task); 
+} )
+
+})
+    
+
+
+
+
+
+ -->
+ 
+    // task.classList.add("mb-3");
+ 
+    // const content2 = document.createElement("div")
+    // content.classList.add("content2")
+
+    // const content3 = document.createElement("div")
+    // content.classList.add("content3")
+
+
+    // const content4 = document.createElement("div")
+    // content.classList.add("content4")
+ 
+    // task_input.classList.add("form-control")
+    // task_input.classList.add("mb-2")
+ 
+    // email.classList.add("form-control")
+    // email.classList.add("mb-2")
+ 
+    // mobile.classList.add("form-control")
+    // mobile.classList.add("mb-2")
+ 
+    // password.classList.add("form-control")
+    // password.classList.add("mb-2")
+ 
+    // task_edit.classList.add("btn")
+    // task_edit.classList.add("btn-warning")
+ 
+    // task_delete.classList.add("btn-danger")
+    // task_delete.classList.add("mx-3")
+ 
+// <!doctype html>
+// <html lang="en">
+
+// <head>
+//   <!-- Required meta tags -->
+//   <meta charset="utf-8">
+//   <meta name="viewport" content="width=device-width, initial-scale=1">
+//   <link rel="stylesheet" href="">
+//   <!-- Bootstrap CSS -->
+//   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+//     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+//   <title>Form Validation</title>
+// </head>
+
+// <body>
+
+//   <div class="container">
+//     <h1 class="my-5">Form Validation</h1>
+//     <form id="form">
+//       <div class="mb-3">
+//         <label class="form-label">Name</label>
+//         <input type="text" class="form-control" id="name" />
+//       </div>
+  
+//       <div class="mb-3">
+//         <label class="form-label">Email</label>
+//         <input type="email" class="form-control" id="email" />
+//       </div>
+  
+//       <div class="mb-3">
+//         <label class="form-label">Phone Number</label>
+//         <input type="tel" class="form-control" id="phone" />
+//       </div>
+  
+//       <div class="mb-3">
+//         <label class="form-label">Password</label>
+//         <input type="password" class="form-control" id="password" />
+//       </div>
+  
+//       <button  type="submit" class="btn btn-primary">Submit</button>
+  
+//     </form>
+//    </div>
+
+
+
+
+//   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+//     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+//     crossorigin="anonymous"></script>
+//     <script src="app.js"></script>
+// </body>
+
+// </html>
+
+
+
+
+// const form = document.querySelector("#form")
+// const name = document.querySelector("#name")
+// const email = document.querySelector("#email")
+// const phone = document.querySelector("#phone")
+// const password = document.querySelector("#password")
+
+
+
+
+// form.addEventListener("submit", (e) => {
+//     // e.preventDefault();
+//     const nameValue = name.value.trim();
+//     const emailValue = email.value.trim();
+//     const phoneValue = phone.value.trim();
+//     const passwordValue = password.value.trim();
+
+//     if (nameValue == "") {
+//         e.preventDefault();
+//         alert("Please provide the name!")
+//         name.focus();
+//         return false;
+//     }
+
+
+//     if (!isNaN(nameValue)) {
+//         e.preventDefault();
+//         alert("Please provide a valid name!")
+//         name.focus();
+//         return false;
+//     }
+
+//     if (emailValue == "") {
+//         e.preventDefault();
+//         alert("Please provide an email!")
+//         email.focus();
+//         return false;
+//     }
+
+//     if (phoneValue == "") {
+//         e.preventDefault();
+//         alert("Please provide an phone number!")
+//         phone.focus();
+//         return false;
+//     }
+
+//     if (phoneValue.length <10 || phoneValue.length >10) {
+//         e.preventDefault();
+//         alert("Please provide the valid phone number!")
+//         phone.focus();
+//         return false;
+//     }
+
+//     if (passwordValue == "") {
+//         e.preventDefault();
+//         alert("Please provide an password!")
+//         password.focus();
+//         return false;
+//     }
+
+
+//     if (passwordValue.length < 5) {
+//         e.preventDefault();
+//         alert("Password can't be less than 5 digits ")
+//         password.focus();
+//         return false;
+//     }
+
+//     alert("Data saved successfully")
+
+// })
+
+
+
+
+
+//  const nameEl = document.getElementById("name");
+// const emailEl = document.getElementById("email");
+// const mobileEl = document.getElementById("mobile");
+// const PasswordEl = document.getElementById("Password");
+
+
+// const nameValue = nameEl.value.trim();
+// const emailValue =emailEl.value.trim();
+// const phoneValue = mobileEl.value.trim();
+// const passwordValue = PasswordEl.value.trim();
+
+
+
+
+// if (nameValue == "") {
+//     // e.preventDefault();
+//     alert("Please provide the name!")
+//     nameEl.focus();
+//     return false;
+// }
+
+
+// if (!isNaN(nameValue)) {
+//     // e.preventDefault();
+//     alert("Please provide a valid name!")
+//     nameEl.focus();
+//     return false;
+// }
+
+
+
+// if (emailValue == "") {
+//     // e.preventDefault();
+//     alert("Please provide an email!")
+//     emailEl.focus();
+//     return false;
+// }
+
+
+// if (phoneValue == "") {
+//     // e.preventDefault();
+//     alert("Please provide an phone number!")
+//     mobileEl.focus();
+//     return false;
+// }
+
+// if (phoneValue.length <10 || phoneValue.length >10) {
+//     // e.preventDefault();
+//     alert("Please provide the valid phone number!")
+//     mobileEl.focus();
+//     return false;
+// }
+
+
+
+// if (passwordValue == "") {
+//     // e.preventDefault();
+//     alert("Please provide an password!")
+//     PasswordEl.focus();
+//     return false;
+// }
+
+
+// if (passwordValue.length < 5) {
+//     // e.preventDefault();
+//     alert("Password can't be less than 5 digits ")
+//     PasswordEl.focus();
+//     return false;
+// }
+ 
+
+if (userData == "") {
+    // e.preventDefault();
+    alert("Please provide the name!")
+    userData.focus();
+    return false;
+}
+
+
+if (!isNaN(userData)) {
+    // e.preventDefault();
+    alert("Please provide a valid name!")
+    userData.focus();
+    return false;
+}
+
+
+
+if (userData1 == "") {
+    // e.preventDefault();
+    alert("Please provide an email!")
+    userData1.focus();
+    return false;
+}
+
+
+if (userData2 == "") {
+    // e.preventDefault();
+    alert("Please provide an phone number!")
+    userData2.focus();
+    return false;
+}
+
+if (phoneValue.length <10 || phoneValue.length >10) {
+    // e.preventDefault();
+    alert("Please provide the valid phone number!")
+    mobileEl.focus();
+    return false;
+}
+
+
+
+if (passwordValue == "") {
+    // e.preventDefault();
+    alert("Please provide an password!")
+    PasswordEl.focus();
+    return false;
+}
+
+
+if (passwordValue.length < 5) {
+    // e.preventDefault();
+    alert("Password can't be less than 5 digits ")
+    PasswordEl.focus();
+    return false;
+// }
+
+
+
+
+
+
+ 
+if (userData == "") {
+    // e.preventDefault();
+    alert("Please provide the name!")
+    userData.focus();
+    return false;
+}
+
+
+if (!isNaN(userData)) {
+    // e.preventDefault();
+    alert("Please provide a valid name!")
+    userData.focus();
+    return false;
+}
+
+
+
+if (userData1 == "") {
+    // e.preventDefault();
+    alert("Please provide an email!")
+    userData1.focus();
+    return false;
+}
+
+
+if (userData2 == "") {
+    // e.preventDefault();
+    alert("Please provide an phone number!")
+    userData2.focus();
+    return false;
+}
+
+if (phoneValue.length <10 || phoneValue.length >10) {
+    // e.preventDefault();
+    alert("Please provide the valid phone number!")
+    mobileEl.focus();
+    return false;
+}
+
+
+
+if (passwordValue == "") {
+    // e.preventDefault();
+    alert("Please provide an password!")
+    PasswordEl.focus();
+    return false;
+}
+
+
+if (passwordValue.length < 5) {
+    // e.preventDefault();
+    alert("Password can't be less than 5 digits ")
+    PasswordEl.focus();
+    return false;
+// }
+
+
+
+
+
+ 
+if (phoneValue.length <10 || phoneValue.length >10) {
+    // e.preventDefault();
+    alert("Please provide the valid phone number!")
+    mobileEl.focus();
+    return false;
+}
+ 
+
+    if (userData == "") {
+        // e.preventDefault();
+        alert("Please provide the name!")
+        userData.focus();
+        return false;
+    }
+    
+
+    if (!isNaN(userData)) {
+        // e.preventDefault();
+        alert("Please provide a valid name!")
+        nameEl.focus();
+        return false;
+    }
+    
+    
+    
+    if (emailValue == "") {
+        // e.preventDefault();
+        alert("Please provide an email!")
+        emailEl.focus();
+        return false;
+    }
+    
+    
+    if (phoneValue == "") {
+        // e.preventDefault();
+        alert("Please provide an phone number!")
+        mobileEl.focus();
+        return false;
+    }
+    
+    if (phoneValue.length <10 || phoneValue.length >10) {
+        // e.preventDefault();
+        alert("Please provide the valid phone number!")
+        mobileEl.focus();
+        return false;
+    }
+    
+    
+    
+    if (passwordValue == "") {
+        // e.preventDefault();
+        alert("Please provide an password!")
+        PasswordEl.focus();
+        return false;
+    }
+    
+    
+    if (passwordValue.length < 5) {
+        // e.preventDefault();
+        alert("Password can't be less than 5 digits ")
+        PasswordEl.focus();
+        return false;
+    }
+
+
+ 
+if (!isNaN(nameValue)) {
+        // e.preventDefault();
+        alert("Please provide a valid name!")
+        nameEl.focus();
+        return false;
+    }
+ 
+
+
+if (input == "") {
+    // e.preventDefault();
+    alert("Please provide the name!")
+    input.focus();
+    return false;
+}
+
+
+if (!isNaN(input)) {
+    // e.preventDefault();
+    alert("Please provide a valid name!")
+    input.focus();
+    return false;
+}
+
+
+if (input1 == "") {
+    e.preventDefault();
+    alert("Please provide an email!")
+    input1.focus();
+    return false;
+}
+
+
+if (input2 == "") {
+    e.preventDefault();
+    alert("Please provide an phone number!")
+    input2.focus();
+    return false;
+}
+
+if (input2.length <10 || input2.length >10) {
+    e.preventDefault();
+    alert("Please provide the valid phone number!")
+    input2.focus();
+    return false;
+}
+
+
+
+if (input3 == "") {
+    e.preventDefault();
+    alert("Please provide an password!")
+    input3.focus();
+    return false;
+}
+
+
+if (input3.length < 5) {
+    e.preventDefault();
+    alert("Password can't be less than 5 digits ")
+    input3.focus();
+    return false;
+}
+
+ 
+new-task-input
+ 
+const nameEl = document.querySelector("#nameel").value = task_input
+const emailEl = document.querySelector("#emailel").value = email
+const mobileEl = document.querySelector("#mobileel").value = mobile
+const PasswordEl = document.querySelector("#passwordel").value = password
+ 
+const nameEl = document.querySelector("#nameel").value = task_input
+const emailEl = document.querySelector("#emailel").value = email
+const mobileEl = document.querySelector("#mobileel").value = mobile
+const PasswordEl = document.querySelector("#passwordel").value = password
+
+ 
+const nameEl = document.querySelector("#nameel").value = task_input
+const emailEl = document.querySelector("#emailel").value = email
+const mobileEl = document.querySelector("#mobileel").value = mobile
+const PasswordEl = document.querySelector("#passwordel").value = password
+ 
+const nameEl = document.querySelector("#nameel").value = task_input
+const emailEl = document.querySelector("#emailel").value = email
+const mobileEl = document.querySelector("#mobileel").value = mobile
+const PasswordEl = document.querySelector("#passwordel").value = password
+ 
+const nameEl = document.querySelector("task_input").value = task_input
+const emailEl = document.querySelector("email").value = email
+const mobileEl = document.querySelector("mobile").value = mobile
+const PasswordEl = document.querySelector("#passwordel").value = password
+ 
+Passwordel
+ 
+const nameEl = document.getElementById("name");
+const emailEl = document.getElementById("email");
+const mobileEl = document.getElementById("mobile");
+const PasswordEl = document.getElementById("Password");
+
+
+const nameValue = nameEl.value.trim();
+const emailValue =emailEl.value.trim();
+const phoneValue = mobileEl.value.trim();
+const passwordValue = PasswordEl.value.trim();
+
+
+
+
+if (nameValue == "") {
+    // e.preventDefault();
+    alert("Please provide the name!")
+    nameEl.focus();
+    return false;
+}
+
+
+if (!isNaN(nameValue)) {
+    // e.preventDefault();
+    alert("Please provide a valid name!")
+    nameEl.focus();
+    return false;
+}
+
+
+
+if (emailValue == "") {
+    // e.preventDefault();
+    alert("Please provide an email!")
+    emailEl.focus();
+    return false;
+}
+
+
+if (phoneValue == "") {
+    // e.preventDefault();
+    alert("Please provide an phone number!")
+    mobileEl.focus();
+    return false;
+}
+
+if (phoneValue.length <10 || phoneValue.length >10) {
+    // e.preventDefault();
+    alert("Please provide the valid phone number!")
+    mobileEl.focus();
+    return false;
+}
+
+
+
+if (passwordValue == "") {
+    // e.preventDefault();
+    alert("Please provide an password!")
+    PasswordEl.focus();
+    return false;
+}
+
+
+if (passwordValue.length < 5) {
+    // e.preventDefault();
+    alert("Password can't be less than 5 digits ")
+    PasswordEl.focus();
+    return false;
+}
+ 
+break;
+ 
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Form Validation</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="my-5">Form Validation</h1>
+    <form id="form">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" />
+      </div>
+  
+      <button  type="submit" class="btn btn-primary">Submit</button>
+  
+    </form>
+   </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
+const form = document.querySelector("#form")
+const name = document.querySelector("#name")
+const email = document.querySelector("#email")
+const phone = document.querySelector("#phone")
+const password = document.querySelector("#password")
+
+
+
+
+form.addEventListener("submit", (e) => {
+    // e.preventDefault();
+    const nameValue = name.value.trim();
+    const emailValue = email.value.trim();
+    const phoneValue = phone.value.trim();
+    const passwordValue = password.value.trim();
+
+    if (nameValue == "") {
+        e.preventDefault();
+        alert("Please provide the name!")
+        name.focus();
+        return false;
+    }
+
+
+    if (!isNaN(nameValue)) {
+        e.preventDefault();
+        alert("Please provide a valid name!")
+        name.focus();
+        return false;
+    }
+
+    if (emailValue == "") {
+        e.preventDefault();
+        alert("Please provide an email!")
+        email.focus();
+        return false;
+    }
+
+    if (phoneValue == "") {
+        e.preventDefault();
+        alert("Please provide an phone number!")
+        phone.focus();
+        return false;
+    }
+
+    if (phoneValue.length <10 || phoneValue.length >10) {
+        e.preventDefault();
+        alert("Please provide the valid phone number!")
+        phone.focus();
+        return false;
+    }
+
+    if (passwordValue == "") {
+        e.preventDefault();
+        alert("Please provide an password!")
+        password.focus();
+        return false;
+    }
+
+
+    if (passwordValue.length < 5) {
+        e.preventDefault();
+        alert("Password can't be less than 5 digits ")
+        password.focus();
+        return false;
+    }
+
+    alert("Data saved successfully")
+
+})
+ 
+new-task-input
+ 
+// const form = document.querySelector("#form")
+// const name = document.querySelector("#name")
+// const email = document.querySelector("#email")
+// const phone = document.querySelector("#phone")
+// const password = document.querySelector("#password")
+
+
+
+
+// form.addEventListener("submit", (e) => {
+//     // e.preventDefault();
+//     const nameValue = name.value.trim();
+//     const emailValue = email.value.trim();
+//     const phoneValue = phone.value.trim();
+//     const passwordValue = password.value.trim();
+
+//     if (nameValue == "") {
+//         e.preventDefault();
+//         alert("Please provide the name!")
+//         name.focus();
+//         return false;
+//     }
+
+
+//     if (!isNaN(nameValue)) {
+//         e.preventDefault();
+//         alert("Please provide a valid name!")
+//         name.focus();
+//         return false;
+//     }
+
+//     if (emailValue == "") {
+//         e.preventDefault();
+//         alert("Please provide an email!")
+//         email.focus();
+//         return false;
+//     }
+
+//     if (phoneValue == "") {
+//         e.preventDefault();
+//         alert("Please provide an phone number!")
+//         phone.focus();
+//         return false;
+//     }
+
+//     if (phoneValue.length <10 || phoneValue.length >10) {
+//         e.preventDefault();
+//         alert("Please provide the valid phone number!")
+//         phone.focus();
+//         return false;
+//     }
+
+//     if (passwordValue == "") {
+//         e.preventDefault();
+//         alert("Please provide an password!")
+//         password.focus();
+//         return false;
+//     }
+
+
+//     if (passwordValue.length < 5) {
+//         e.preventDefault();
+//         alert("Password can't be less than 5 digits ")
+//         password.focus();
+//         return false;
+//     }
+
+//     const task_edit = document.createElement("button");
+//     task_edit.classList.add("edit")
+//     task_edit.classList.add("btn")
+//     task_edit.classList.add("btn-warning")
+//     task_edit.innerHTML = "Edit";
+
+//     const task_delete = document.createElement("button");
+//     task_delete.classList.add("delete")
+//     task_delete.classList.add("btn")
+//     task_delete.classList.add("btn-danger")
+//     task_delete.classList.add("mx-3")
+//     task_delete.innerHTML = "Delete";
+
+
+//     name.appendChild("task_delete");
+//     email.appendChild("task_delete");
+//     phone.appendChild("task_delete");
+//     password.appendChild("task_delete");
+//     name.appendChild("task_edit")
+//     email.appendChild("task_edit")
+//     phone.appendChild("task_edit")
+//     password.appendChild("task_edit")
+
+//     alert("Data saved successfully")
+
+// })
+
+ 
+       // email.innerHTML = "Edit"
+            // mobile.innerHTML = "Edit"
+            // password.innerHTML = "Edit"
+ 
+focus()
+ 
+  if (task_edit.innerHTML == "Edit") {
+            email.removeAttribute("readonly")
+            task_edit.innerHTML = "Save"
+            email.focus()
+        } else {
+            task_input.setAttribute("readonly", "readonly");
+            email.innerHTML = "Edit"
+
+        }
+ 
+task_edit.addEventListener("click", () => {
+        if (task_edit.innerHTML == "Edit") {
+            email.removeAttribute("readonly")
+            task_edit.innerHTML = "Save"
+            email.focus()
+        } else {
+            task_input.setAttribute("readonly", "readonly");
+            email.innerHTML = "Edit"
+
+        }
+    })
+ 
+Enter the task you want to do
+ 
+<!-- <!doctype html>
+<html lang="en">
+
+<head>
+  Required meta tags
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+
+  <link rel="stylesheet" href="style.css">
+  Bootstrap CSS
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Form Validation</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="my-5">Form Details</h1>
+    <form id="form">
+      <div class="mb-3">
+        <label class="form-label">Name:-</label>
+        <input type="text" class="form-control" id="name" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Email:-</label>
+        <input type="email" class="form-control" id="email" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Phone Number:-</label>
+        <input type="tel" class="form-control" id="phone" />
+      </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+ 
+      <div class="mb-3">
+        <label class="form-label">Password:-</label>
+        <input type="password" class="form-control" id="password" />
+      </div>
+  
+      <button  type="submit" class="btn btn-primary">Add</button>
+  
+    </form>
+
+
+
+    <div class="new">
+      <div class="my-3">
+        <label class="form-label">Name:-</label>
+        <input type="text" class="form-control" id="newname" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Email:-</label>
+        <input type="email" class="form-control" id="newemail" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Phone Number:-</label>
+        <input type="tel" class="form-control" id="newphone" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Password:-</label>
+        <input type="password" class="form-control" id="newpassword" />
+      </div>
+    </div>
+   </div> -->
+
+
+
+   
+
+
+
+
+
+<!-- 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html> -->
+
+
+
+
+
+ 
+// const form = document.querySelector("#form")
+// const name = document.querySelector("#name")
+// const email = document.querySelector("#email")
+// const phone = document.querySelector("#phone")
+// const password = document.querySelector("#password")
+
+
+
+
+// form.addEventListener("submit", (e) => {
+//     // e.preventDefault();
+//     const nameValue = name.value.trim();
+//     const emailValue = email.value.trim();
+//     const phoneValue = phone.value.trim();
+//     const passwordValue = password.value.trim();
+
+//     if (nameValue == "") {
+//         e.preventDefault();
+//         alert("Please provide the name!")
+//         name.focus();
+//         return false;
+//     }
+
+
+//     if (!isNaN(nameValue)) {
+//         e.preventDefault();
+//         alert("Please provide a valid name!")
+//         name.focus();
+//         return false;
+//     }
+
+//     if (emailValue == "") {
+//         e.preventDefault();
+//         alert("Please provide an email!")
+//         email.focus();
+//         return false;
+//     }
+
+//     if (phoneValue == "") {
+//         e.preventDefault();
+//         alert("Please provide an phone number!")
+//         phone.focus();
+//         return false;
+//     }
+
+//     if (phoneValue.length <10 || phoneValue.length >10) {
+//         e.preventDefault();
+//         alert("Please provide the valid phone number!")
+//         phone.focus();
+//         return false;
+//     }
+
+//     if (passwordValue == "") {
+//         e.preventDefault();
+//         alert("Please provide an password!")
+//         password.focus();
+//         return false;
+//     }
+
+
+//     if (passwordValue.length < 5) {
+//         e.preventDefault();
+//         alert("Password can't be less than 5 digits ")
+//         password.focus();
+//         return false;
+//     }
+
+//     const task_edit = document.createElement("button");
+//     task_edit.classList.add("edit")
+//     task_edit.classList.add("btn")
+//     task_edit.classList.add("btn-warning")
+//     task_edit.innerHTML = "Edit";
+
+//     const task_delete = document.createElement("button");
+//     task_delete.classList.add("delete")
+//     task_delete.classList.add("btn")
+//     task_delete.classList.add("btn-danger")
+//     task_delete.classList.add("mx-3")
+//     task_delete.innerHTML = "Delete";
+
+
+//     name.appendChild("task_delete");
+//     email.appendChild("task_delete");
+//     phone.appendChild("task_delete");
+//     password.appendChild("task_delete");
+//     name.appendChild("task_edit")
+//     email.appendChild("task_edit")
+//     phone.appendChild("task_edit")
+//     password.appendChild("task_edit")
+
+//     alert("Data saved successfully")
+
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const form = document.querySelector("#new-task-form");
+const input = document.querySelector("#new-task-input");
+const tasks = document.querySelector(".tasks");
+
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const userData = input.value;
+
+
+    if (!userData) {
+        alert("Please give some task before submitting!")
+        return;
+    }
+
+    const task = document.createElement("div");
+    task.classList.add("task");
+    task.classList.add("mb-3");
+
+    const content = document.createElement("div")
+    content.classList.add("content")
+
+
+    const content2 = document.createElement("div")
+    content.classList.add("content2")
+
+    const content3 = document.createElement("div")
+    content.classList.add("content3")
+
+
+    const content4 = document.createElement("div")
+    content.classList.add("content4")
+
+    const task_input = document.createElement("input")
+    task_input.classList.add("text")
+    task_input.classList.add("form-control")
+    task_input.classList.add("mb-2")
+    task_input.value = userData;
+    task_input.setAttribute("readonly", "readonly");
+    task_input.type = "text"
+
+
+    const email = document.createElement("input")
+    email.classList.add("text")
+    email.classList.add("form-control")
+    email.classList.add("mb-2")
+    email.value = userData;
+    email.setAttribute("readonly", "readonly");
+    email.type = "text"
+
+
+    const mobile = document.createElement("input")
+    mobile.classList.add("text")
+    mobile.classList.add("form-control")
+    mobile.classList.add("mb-2")
+    mobile.value = userData;
+    mobile.setAttribute("readonly", "readonly");
+    mobile.type = "text"
+
+
+    const password = document.createElement("input")
+    password.classList.add("text")
+    password.classList.add("form-control")
+    password.classList.add("mb-2")
+    password.value = userData;
+    password.setAttribute("readonly", "readonly");
+    password.type = "text"
+
+
+
+    content.appendChild(task_input);
+    content2.appendChild(email)
+    content3.appendChild( mobile)
+    content4.appendChild(password)
+
+    tasks.appendChild(content);
+    tasks.appendChild(content2);
+    tasks.appendChild(content3);
+    tasks.appendChild(content4);
+    tasks.appendChild(task);
+
+
+
+    const actions = document.createElement("div");
+    actions.classList.add("actions");
+
+    const task_edit = document.createElement("button");
+    task_edit.classList.add("edit")
+    task_edit.classList.add("btn")
+    task_edit.classList.add("btn-warning")
+    task_edit.innerHTML = "Edit";
+
+    const task_delete = document.createElement("button");
+    task_delete.classList.add("delete")
+    task_delete.classList.add("btn")
+    task_delete.classList.add("btn-danger")
+    task_delete.classList.add("mx-3")
+    task_delete.innerHTML = "Delete";
+
+
+    actions.appendChild(task_edit)
+    actions.appendChild(task_delete)
+    task.appendChild(actions)
+
+    input.value = ""
+
+    // Edit user data 
+    task_edit.addEventListener("click", () => {
+        if (task_edit.innerHTML == "Edit") {
+            task_input.removeAttribute("readonly")
+            task_edit.innerHTML = "Save"
+            task_input.focus()
+        } else {
+            task_input.setAttribute("readonly", "readonly");
+            task_edit.innerHTML = "Edit"
+
+        }
+    })
+
+// Delete user data 
+task_delete.addEventListener("click",() =>{
+        tasks.removeChild(task); 
+} )
+
+})
+    
+
+
+
+
+
+
+
+ 
+ <h1>Hello, world!</h1>
+ 
+Hello, world!
+ 
+ <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+ 
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+ 
+<!-- <!doctype html>
+<html lang="en">
+
+<head>
+  Required meta tags
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+
+  <link rel="stylesheet" href="style.css">
+  Bootstrap CSS
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Form Validation</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="my-5">Form Details</h1>
+    <form id="form">
+      <div class="mb-3">
+        <label class="form-label">Name:-</label>
+        <input type="text" class="form-control" id="name" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Email:-</label>
+        <input type="email" class="form-control" id="email" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Phone Number:-</label>
+        <input type="tel" class="form-control" id="phone" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Password:-</label>
+        <input type="password" class="form-control" id="password" />
+      </div>
+  
+      <button  type="submit" class="btn btn-primary">Add</button>
+  
+    </form>
+
+
+
+    <div class="new">
+      <div class="my-3">
+        <label class="form-label">Name:-</label>
+        <input type="text" class="form-control" id="newname" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Email:-</label>
+        <input type="email" class="form-control" id="newemail" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Phone Number:-</label>
+        <input type="tel" class="form-control" id="newphone" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Password:-</label>
+        <input type="password" class="form-control" id="newpassword" />
+      </div>
+    </div>
+   </div> -->
+
+
+
+   
+
+
+
+
+
+<!-- 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+        <!-- <input type="tel" label="Mobile Number" pattern="^[7-9][0-9]{8}$" maxLength="10"/> -->
+        <!-- <input type="tel" label="Mobile Number" pattern="^[7-9][0-9]{8}$" maxLength="10"/> -->
+
+        <!doctype html>
+        <html lang="en">
+        
+        <head>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+            <title>CRUD Operations</title>
+        </head>
+        
+        <body>
+            <div class="container">
+                <h1 class="text-center mt-5">Todo App</h1>
+        
+        
+                <form id="new-task-form">
+                    <div class="mb-3">
+                        <label class="form-label mt-5">Add Tasks</label>
+                        <input type="text" 
+                        class="form-control" 
+                        placeholder="Enter the task you want to do" 
+                        id="new-task-input"
+                        autocomplete="off">
+                    </div>
+        
+                    <input type="submit" class="btn btn-success" id="new-task-submit" value="Add tasks">
+                </form>
+                <div class="task-list">
+                    <h1 class="mt-5">Tasks</h1>
+        
+                    <div class="tasks">
+                        <!-- <div class="task">
+                            <div class="content ">
+                                <input type="text " value="my item" readonly class="text mb-2 form-control">
+                            </div>
+                            <div class="actions ">
+                                <button class="edit btn btn-warning">Edit</button>
+                                <button class="delete btn btn-danger">Delete</button>
+                            
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+        
+        </body>
+        
+        </html>
+        
+        
+        
+        
+        
+       
+ 
+    content.appendChild(email)
+    content.appendChild( mobile)
+    content.appendChild(password)
+ 
+task_inpu
+ 
+ const form = document.querySelector("#new-task-form");
+        const input = document.querySelector("#new-task-input");
+        const tasks = document.querySelector(".tasks");
+        
+        
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const userData = input.value;
+        
+        
+            if (!userData) {
+                alert("Please give some task before submitting!")
+                return;
+            }
+        
+            const task = document.createElement("div");
+            task.classList.add("task");
+            task.classList.add("mb-3");
+        
+            const content = document.createElement("div")
+            content.classList.add("content")
+        
+            const task_input = document.createElement("input")
+            task_input.classList.add("text")
+            task_input.classList.add("form-control")
+            task_input.classList.add("mb-2")
+            task_input.value = userData;
+            task_input.setAttribute("readonly", "readonly");
+            task_input.type = "text"
+        
+        
+            content.appendChild(task_input);
+            task.appendChild(content);
+            tasks.appendChild(task);
+        
+        
+        
+            const actions = document.createElement("div");
+            actions.classList.add("actions");
+        
+            const task_edit = document.createElement("button");
+            task_edit.classList.add("edit")
+            task_edit.classList.add("btn")
+            task_edit.classList.add("btn-warning")
+            task_edit.innerHTML = "Edit";
+        
+            const task_delete = document.createElement("button");
+            task_delete.classList.add("delete")
+            task_delete.classList.add("btn")
+            task_delete.classList.add("btn-danger")
+            task_delete.classList.add("mx-3")
+            task_delete.innerHTML = "Delete";
+        
+        
+            actions.appendChild(task_edit)
+            actions.appendChild(task_delete)
+            task.appendChild(actions)
+        
+            input.value = ""
+        
+            // Edit user data 
+            task_edit.addEventListener("click", () => {
+                if (task_edit.innerHTML == "Edit") {
+                    task_input.removeAttribute("readonly")
+                    task_edit.innerHTML = "Save"
+                    task_input.focus()
+                } else {
+                    task_input.setAttribute("readonly", "readonly");
+                    task_edit.innerHTML = "Edit"
+        
+                }
+            })
+        
+        // Delete user data 
+        task_delete.addEventListener("click",() =>{
+                tasks.removeChild(task); 
+        } )
+        
+        })
+            
+        
+        
+        
+        
+        
+        
+
+ 
+const task_edit = document.createElement("button");
+    task_edit.classList.add("edit")
+    task_edit.classList.add("btn")
+    task_edit.classList.add("btn-warning")
+    task_edit.innerHTML = "Edit";
+
+    const task_delete = document.createElement("button");
+    task_delete.classList.add("delete")
+    task_delete.classList.add("btn")
+    task_delete.classList.add("btn-danger")
+    task_delete.classList.add("mx-3")
+    task_delete.innerHTML = "Delete";
+ 
+
+
+const form = document.querySelector("#new-task-form");
+const input = document.querySelector("#new-task-input");
+const tasks = document.querySelector(".tasks");
+
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const userData = input.value;
+
+
+    if (!userData) {
+        alert("Please give some task before submitting!")
+        return;
+    }
+
+    const task = document.createElement("div");
+    task.classList.add("task");
+    task.classList.add("mb-3");
+
+    const content = document.createElement("div")
+    content.classList.add("content")
+
+    const task_input = document.createElement("input")
+    task_input.classList.add("text")
+    task_input.classList.add("form-control")
+    task_input.classList.add("mb-2")
+    task_input.value = userData;
+    task_input.setAttribute("readonly", "readonly");
+    task_input.type = "text"
+
+
+    content.appendChild(task_input);
+    task.appendChild(content);
+    tasks.appendChild(task);
+
+
+
+    const actions = document.createElement("div");
+    actions.classList.add("actions");
+
+    const task_edit = document.createElement("button");
+    task_edit.classList.add("edit")
+    task_edit.classList.add("btn")
+    task_edit.classList.add("btn-warning")
+    task_edit.innerHTML = "Edit";
+
+    const task_delete = document.createElement("button");
+    task_delete.classList.add("delete")
+    task_delete.classList.add("btn")
+    task_delete.classList.add("btn-danger")
+    task_delete.classList.add("mx-3")
+    task_delete.innerHTML = "Delete";
+
+
+    actions.appendChild(task_edit)
+    actions.appendChild(task_delete)
+    task.appendChild(actions)
+
+    input.value = ""
+
+    // Edit user data 
+    task_edit.addEventListener("click", () => {
+        if (task_edit.innerHTML == "Edit") {
+            task_input.removeAttribute("readonly")
+            task_edit.innerHTML = "Save"
+            task_input.focus()
+        } else {
+            task_input.setAttribute("readonly", "readonly");
+            task_edit.innerHTML = "Edit"
+
+        }
+    })
+
+// Delete user data 
+task_delete.addEventListener("click",() =>{
+        tasks.removeChild(task); 
+} )
+
+})
+ 
+ <div class="mb-3">
+      <label class="form-label">Name:-</label>
+      <input type="text" class="form-control" id="newname" />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Email:-</label>
+      <input type="email" class="form-control" id="newemail" />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Phone Number:-</label>
+      <input type="tel" class="form-control" id="newphone" />
+      <!-- <input type="tel" label="Mobile Number" pattern="^[7-9][0-9]{8}$" maxLength="10"/> -->
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Password:-</label>
+      <input type="password" class="form-control" id="newpassword" />
+    </div>
+ 
+   </div>
+ 
+   <div class="">
+ 
+Validation
+ 
+const form = document.querySelector("#form")
+const name = document.querySelector("#name")
+const email = document.querySelector("#email")
+const phone = document.querySelector("#phone")
+const password = document.querySelector("#password")
+
+
+
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const nameValue = name.value.trim();
+    const emailValue = email.value.trim();
+    const phoneValue = phone.value.trim();
+    const passwordValue = password.value.trim();
+
+    if (nameValue == "") {
+        e.preventDefault();
+        alert("Please provide the name!")
+        name.focus();
+        return false;
+    }
+
+
+    if (!isNaN(nameValue)) {
+        e.preventDefault();
+        alert("Please provide a valid name!")
+        name.focus();
+        return false;
+    }
+
+    if (emailValue == "") {
+        e.preventDefault();
+        alert("Please provide an email!")
+        email.focus();
+        return false;
+    }
+
+    if (phoneValue == "") {
+        e.preventDefault();
+        alert("Please provide an phone number!")
+        phone.focus();
+        return false;
+    }
+
+    if (phoneValue.length <10 || phoneValue.length >10) {
+        e.preventDefault();
+        alert("Please provide the valid phone number!")
+        phone.focus();
+        return false;
+    }
+
+    if (passwordValue == "") {
+        e.preventDefault();
+        alert("Please provide an password!")
+        password.focus();
+        return false;
+    }
+
+
+    if (passwordValue.length < 5) {
+        e.preventDefault();
+        alert("Password can't be less than 5 digits ")
+        password.focus();
+        return false;
+    }
+
+    alert("Data saved successfully")
+
+})
+
+
+
+
+
+ 
+const form = document.querySelector("#form")
+const name = document.querySelector("#name")
+const email = document.querySelector("#email")
+const phone = document.querySelector("#phone")
+const password = document.querySelector("#password")
+
+
+
+
+form.addEventListener("submit", (e) => {
+    // e.preventDefault();
+    const nameValue = name.value.trim();
+    const emailValue = email.value.trim();
+    const phoneValue = phone.value.trim();
+    const passwordValue = password.value.trim();
+
+    if (nameValue == "") {
+        e.preventDefault();
+        alert("Please provide the name!")
+        name.focus();
+        return false;
+    }
+
+
+    if (!isNaN(nameValue)) {
+        e.preventDefault();
+        alert("Please provide a valid name!")
+        name.focus();
+        return false;
+    }
+
+    if (emailValue == "") {
+        e.preventDefault();
+        alert("Please provide an email!")
+        email.focus();
+        return false;
+    }
+
+    if (phoneValue == "") {
+        e.preventDefault();
+        alert("Please provide an phone number!")
+        phone.focus();
+        return false;
+    }
+
+    if (phoneValue.length <10 || phoneValue.length >10) {
+        e.preventDefault();
+        alert("Please provide the valid phone number!")
+        phone.focus();
+        return false;
+    }
+
+    if (passwordValue == "") {
+        e.preventDefault();
+        alert("Please provide an password!")
+        password.focus();
+        return false;
+    }
+
+
+    if (passwordValue.length < 5) {
+        e.preventDefault();
+        alert("Password can't be less than 5 digits ")
+        password.focus();
+        return false;
+    }
+
+    alert("Data saved successfully")
+
+})
+
+
+
+ 
+const form = document.querySelector("#new-task-form");
+const input = document.querySelector("#new-task-input");
+const tasks = document.querySelector(".tasks");
+
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const userData = input.value;
+
+
+    if (!userData) {
+        alert("Please give some task before submitting!")
+        return;
+    }
+
+    const task = document.createElement("div");
+    task.classList.add("task");
+    task.classList.add("mb-3");
+
+    const content = document.createElement("div")
+    content.classList.add("content")
+
+    const task_input = document.createElement("input")
+    task_input.classList.add("text")
+    task_input.classList.add("form-control")
+    task_input.classList.add("mb-2")
+    task_input.value = userData;
+    task_input.setAttribute("readonly", "readonly");
+    task_input.type = "text"
+
+    const task_input1 = document.createElement("input1")
+    task_input1.classList.add("text")
+    task_input1.classList.add("form-control")
+    task_input1.classList.add("mb-2")
+    task_input1.value = userData;
+    task_input1.setAttribute("readonly", "readonly");
+    task_input1.type = "text"
+
+    const task_input2 = document.createElement("input2")
+    task_input2.classList.add("text")
+    task_input2.classList.add("form-control")
+    task_input2.classList.add("mb-2")
+    task_input2.value = userData;
+    task_input2.setAttribute("readonly", "readonly");
+    task_input2.type = "text"
+
+    const task_input3 = document.createElement("input3")
+    task_input3.classList.add("text")
+    task_input3.classList.add("form-control")
+    task_input3.classList.add("mb-2")
+    task_input3.value = userData;
+    task_input3.setAttribute("readonly", "readonly");
+    task_input3.type = "text"
+
+
+    content.appendChild(task_input);
+    task.appendChild(content);
+    tasks.appendChild(task);
+
+    content.appendChild(task_input1);
+
+    task.appendChild(content);
+    tasks.appendChild(task);
+
+    content.appendChild(task_input2);
+    task.appendChild(content);
+    tasks.appendChild(task);
+
+    content.appendChild(task_input3);
+    task.appendChild(content);
+    tasks.appendChild(task);
+
+
+
+    const actions = document.createElement("div");
+    actions.classList.add("actions");
+
+    const task_edit = document.createElement("button");
+    task_edit.classList.add("edit")
+    task_edit.classList.add("btn")
+    task_edit.classList.add("btn-warning")
+    task_edit.innerHTML = "Edit";
+
+    const task_delete = document.createElement("button");
+    task_delete.classList.add("delete")
+    task_delete.classList.add("btn")
+    task_delete.classList.add("btn-danger")
+    task_delete.classList.add("mx-3")
+    task_delete.innerHTML = "Delete";
+
+
+    actions.appendChild(task_edit)
+    actions.appendChild(task_delete)
+    task.appendChild(actions)
+
+    input.value = ""
+
+    // Edit user data 
+    task_edit.addEventListener("click", () => {
+        if (task_edit.innerHTML == "Edit") {
+            task_input.removeAttribute("readonly")
+            task_edit.innerHTML = "Save"
+            task_input.focus()
+        } else {
+            task_input.setAttribute("readonly", "readonly");
+            task_edit.innerHTML = "Edit"
+
+        }
+    })
+
+// Delete user data 
+task_delete.addEventListener("click",() =>{
+        tasks.removeChild(task); 
+} )
+
+})
+
+const actions = document.createElement("div");
+    actions.classList.add("actions");
+
+
+    task_edit.addEventListener("click", ()=>{
+        const task_edit = document.createElement("button");
+    task_edit.classList.add("edit")
+    task_edit.classList.add("btn")
+    task_edit.classList.add("btn-warning")
+    task_edit.innerHTML = "Edit";
+
+
+    task_edit.addEventListener("click", () => {
+        if (task_edit.innerHTML == "Edit") {
+            task_input.removeAttribute("readonly")
+            task_edit.innerHTML = "Save"
+            task_input.focus()
+        } else {
+            task_input.setAttribute("readonly", "readonly");
+            task_edit.innerHTML = "Edit"
+
+        }
+    })
+
+    })
+
+    
+
+    const task_delete = document.createElement("button");
+    task_delete.classList.add("delete")
+    task_delete.classList.add("btn")
+    task_delete.classList.add("btn-danger")
+    task_delete.classList.add("mx-3")
+    task_delete.innerHTML = "Delete";
+
+
+    actions.appendChild(task_edit)
+    actions.appendChild(task_delete)
+    task.appendChild(actions)
+
+    input.value = ""
+
+    // Edit user data 
+    
+// Delete user data 
+task_delete.addEventListener("click",() =>{
+        tasks.removeChild(task); 
+} )
+
+    
+ 
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>CRUD Operations</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Todo App</h1>
+
+
+        <form id="new-task-form">
+            <div class="mb-3">
+                <label class="form-label mt-5">Add Tasks</label>
+                <input type="text" 
+                class="form-control" 
+                placeholder="Enter the task you want to do" 
+                id="new-task-input"
+                autocomplete="off">
+                <label class="form-label mt-5">Add Tasks</label>
+                <input type="text" 
+                class="form-control" 
+                placeholder="Enter the task you want to do" 
+                id="new-task-input1"
+                autocomplete="off">
+                <label class="form-label mt-5">Add Tasks</label>
+                <input type="text" 
+                class="form-control" 
+                placeholder="Enter the task you want to do" 
+                id="new-task-input2"
+                autocomplete="off">
+                <label class="form-label mt-5">Add Tasks</label>
+                <input type="text" 
+                class="form-control" 
+                placeholder="Enter the task you want to do" 
+                id="new-task-input3"
+                autocomplete="off">
+            </div>
+
+            <input type="submit" class="btn btn-success" id="new-task-submit" value="Add tasks">
+        </form>
+        <div class="task-list">
+            <h1 class="mt-5">Tasks</h1>
+
+            <div class="tasks">
+                <!-- <div class="task">
+                    <div class="content ">
+                        <input type="text " value="my item" readonly class="text mb-2 form-control">
+                    </div>
+                    <div class="actions ">
+                        <button class="edit btn btn-warning">Edit</button>
+                        <button class="delete btn btn-danger">Delete</button>
+                    
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
+
+
+
+ 
+task_edit.addEventListener("click", () => {
+        if (task_edit.innerHTML == "Edit") {
+            task_input.removeAttribute("readonly")
+            task_edit.innerHTML = "Save"
+            task_input.focus()
+        } else {
+            task_input.setAttribute("readonly", "readonly");
+            task_edit.innerHTML = "Edit"
+
+        }
+    })
+
+ 
+const task_edit = document.createElement("button");
+    task_edit.classList.add("edit")
+    task_edit.classList.add("btn")
+    task_edit.classList.add("btn-warning")
+    task_edit.innerHTML = "Edit";
+ 
+ const task_edit = document.createElement("button");
+    task_edit.classList.add("edit")
+    task_edit.classList.add("btn")
+    task_edit.classList.add("btn-warning")
+    task_edit.innerHTML = "Edit";
+
+    const task_delete = document.createElement("button");
+    task_delete.classList.add("delete")
+    task_delete.classList.add("btn")
+    task_delete.classList.add("btn-danger")
+    task_delete.classList.add("mx-3")
+    task_delete.innerHTML = "Delete";
+ 
+const form = document.querySelector("#new-task-form");
+const input = document.querySelector("#new-task-input");
+const tasks = document.querySelector(".tasks");
+
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const userData = input.value;
+
+
+    if (!userData) {
+        alert("Please give some task before submitting!")
+        return;
+    }
+
+    const task = document.createElement("div");
+    task.classList.add("task");
+    task.classList.add("mb-3");
+
+    const content = document.createElement("div")
+    content.classList.add("content")
+
+    const task_input = document.createElement("input")
+    task_input.classList.add("text")
+    task_input.classList.add("form-control")
+    task_input.classList.add("mb-2")
+    task_input.value = userData;
+    task_input.setAttribute("readonly", "readonly");
+    task_input.type = "text"
+
+
+    content.appendChild(task_input);
+    task.appendChild(content);
+    tasks.appendChild(task);
+
+
+
+    const actions = document.createElement("div");
+    actions.classList.add("actions");
+
+    const task_edit = document.createElement("button");
+    task_edit.classList.add("edit")
+    task_edit.classList.add("btn")
+    task_edit.classList.add("btn-warning")
+    task_edit.innerHTML = "Edit";
+
+    const task_delete = document.createElement("button");
+    task_delete.classList.add("delete")
+    task_delete.classList.add("btn")
+    task_delete.classList.add("btn-danger")
+    task_delete.classList.add("mx-3")
+    task_delete.innerHTML = "Delete";
+
+
+    actions.appendChild(task_edit)
+    actions.appendChild(task_delete)
+    task.appendChild(actions)
+
+    input.value = ""
+
+    // Edit user data 
+    task_edit.addEventListener("click", () => {
+        if (task_edit.innerHTML == "Edit") {
+            task_input.removeAttribute("readonly")
+            task_edit.innerHTML = "Save"
+            task_input.focus()
+        } else {
+            task_input.setAttribute("readonly", "readonly");
+            task_edit.innerHTML = "Edit"
+
+        }
+    })
+
+// Delete user data 
+task_delete.addEventListener("click",() =>{
+        tasks.removeChild(task)         
+ 
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>CRUD Operations</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Todo App</h1>
+
+
+        <form id="new-task-form">
+            <div class="mb-3">
+                <label class="form-label mt-5">Add Tasks</label>
+                <input type="text" 
+                class="form-control" 
+                placeholder="Enter the task you want to do" 
+                id="new-task-input"
+                autocomplete="off">
+            </div>
+
+            <input type="submit" class="btn btn-success" id="new-task-submit" value="Add tasks">
+        </form>
+        <div class="task-list">
+            <h1 class="mt-5">Tasks</h1>
+
+            <div class="tasks">
+                <!-- <div class="task">
+                    <div class="content ">
+                        <input type="text " value="my item" readonly class="text mb-2 form-control">
+                    </div>
+                    <div class="actions ">
+                        <button class="edit btn btn-warning">Edit</button>
+                        <button class="delete btn btn-danger">Delete</button>
+                    
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
+
+ 
+class="form-control"
+ 
+id="phone"
+ 
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Form Validation</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="my-5">Form Validation</h1>
+    <form id="form">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" />
+      </div>
+  
+      <button  type="submit" class="btn btn-primary">Submit</button>
+  
+    </form>
+   </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+ 
+const form = document.querySelector("#form")
+const name = document.querySelector("#name")
+const email = document.querySelector("#email")
+const phone = document.querySelector("#phone")
+const password = document.querySelector("#password")
+
+
+
+
+form.addEventListener("submit", (e) => {
+    // e.preventDefault();
+    const nameValue = name.value.trim();
+    const emailValue = email.value.trim();
+    const phoneValue = phone.value.trim();
+    const passwordValue = password.value.trim();
+
+    if (nameValue == "") {
+        e.preventDefault();
+        alert("Please provide the name!")
+        name.focus();
+        return false;
+    }
+
+
+    if (!isNaN(nameValue)) {
+        e.preventDefault();
+        alert("Please provide a valid name!")
+        name.focus();
+        return false;
+    }
+
+    if (emailValue == "") {
+        e.preventDefault();
+        alert("Please provide an email!")
+        email.focus();
+        return false;
+    }
+
+    if (phoneValue == "") {
+        e.preventDefault();
+        alert("Please provide an phone number!")
+        phone.focus();
+        return false;
+    }
+
+    if (phoneValue.length <10 || phoneValue.length >10) {
+        e.preventDefault();
+        alert("Please provide the valid phone number!")
+        phone.focus();
+        return false;
+    }
+
+    if (passwordValue == "") {
+        e.preventDefault();
+        alert("Please provide an password!")
+        password.focus();
+        return false;
+    }
+
+
+    if (passwordValue.length < 5) {
+        e.preventDefault();
+        alert("Password can't be less than 5 digits ")
+        password.focus();
+        return false;
+    }
+
+    alert("Data saved successfully")
+
+})
+ 
+ const form = document.querySelector("#form")
+          const name = document.querySelector("#name")
+          const email = document.querySelector("#email")
+          const phone = document.querySelector("#phone")
+          const password = document.querySelector("#password")
+          
+          
+          
+          
+          form.addEventListener("submit", (e) => {
+              // e.preventDefault();
+              const nameValue = name.value.trim();
+              const emailValue = email.value.trim();
+              const phoneValue = phone.value.trim();
+              const passwordValue = password.value.trim();
+          
+              if (nameValue == "") {
+                  e.preventDefault();
+                  alert("Please provide the name!")
+                  name.focus();
+                  return false;
+              }
+          
+          
+              if (!isNaN(nameValue)) {
+                  e.preventDefault();
+                  alert("Please provide a valid name!")
+                  name.focus();
+                  return false;
+              }
+          
+              if (emailValue == "") {
+                  e.preventDefault();
+                  alert("Please provide an email!")
+                  email.focus();
+                  return false;
+              }
+          
+              if (phoneValue == "") {
+                  e.preventDefault();
+                  alert("Please provide an phone number!")
+                  phone.focus();
+                  return false;
+              }
+          
+              if (phoneValue.length <10 || phoneValue.length >10) {
+                  e.preventDefault();
+                  alert("Please provide the valid phone number!")
+                  phone.focus();
+                  return false;
+              }
+          
+              if (passwordValue == "") {
+                  e.preventDefault();
+                  alert("Please provide an password!")
+                  password.focus();
+                  return false;
+              }
+          
+          
+              if (passwordValue.length < 5) {
+                  e.preventDefault();
+                  alert("Password can't be less than 5 digits ")
+                  password.focus();
+                  return false;
+              }
+          
+              alert("Data saved successfully")
+          
+          })">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+  
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<script src="app.js"></script>
+</body>
+
+</html>
+ 
+<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+</div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+
+<script src="app.js"></script>
+</body>
+
+</html>
+ 
+ const form = document.querySelector("#form")
+          const name = document.querySelector("#name")
+          const email = document.querySelector("#email")
+          const phone = document.querySelector("#phone")
+          const password = document.querySelector("#password")
+          
+          
+          
+          
+          form.addEventListener("submit", (e) => {
+              // e.preventDefault();
+              const nameValue = name.value.trim();
+              const emailValue = email.value.trim();
+              const phoneValue = phone.value.trim();
+              const passwordValue = password.value.trim();
+          
+              if (nameValue == "") {
+                  e.preventDefault();
+                  alert("Please provide the name!")
+                  name.focus();
+                  return false;
+              }
+          
+          
+              if (!isNaN(nameValue)) {
+                  e.preventDefault();
+                  alert("Please provide a valid name!")
+                  name.focus();
+                  return false;
+              }
+          
+              if (emailValue == "") {
+                  e.preventDefault();
+                  alert("Please provide an email!")
+                  email.focus();
+                  return false;
+              }
+          
+              if (phoneValue == "") {
+                  e.preventDefault();
+                  alert("Please provide an phone number!")
+                  phone.focus();
+                  return false;
+              }
+          
+              if (phoneValue.length <10 || phoneValue.length >10) {
+                  e.preventDefault();
+                  alert("Please provide the valid phone number!")
+                  phone.focus();
+                  return false;
+              }
+          
+              if (passwordValue == "") {
+                  e.preventDefault();
+                  alert("Please provide an password!")
+                  password.focus();
+                  return false;
+              }
+          
+          
+              if (passwordValue.length < 5) {
+                  e.preventDefault();
+                  alert("Password can't be less than 5 digits ")
+                  password.focus();
+                  return false;
+              }
+          
+              alert("Data saved successfully")
+          
+          })">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+  
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<script src="app.js"></script>
+</body>
+
+</html>
+ 
+id="exampleInputEmail1" aria-describedby="emailHelp"
+ 
+class="form-control"
+ 
+      <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+ 
+Hello, world!
+ 
+   <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+ 
